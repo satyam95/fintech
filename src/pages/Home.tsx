@@ -12,11 +12,17 @@ import activity3 from "../assets/activity3.png";
 import feat1 from "../assets/feat1.png";
 import feat2 from "../assets/feat2.png";
 import feat3 from "../assets/feat3.png";
+import tick from "../assets/tick.svg";
+import laptop from "../assets/laptop.png";
+import a1 from "../assets/a1.png";
+import a2 from "../assets/a2.png";
+import a3 from "../assets/a3.png";
+import a4 from "../assets/a4.png";
 
 import Button from "../components/Button";
-import InfoCard from "../components/infoCard";
 import ReviewCard from "../components/ReviewCard";
 import FeatureCard from "../components/FeatureCard";
+import InfoCard from "../components/InfoCard";
 
 const Home = () => {
   return (
@@ -156,6 +162,248 @@ const Home = () => {
               title="Daily Analytics"
               descp="We always provide useful informatin to make it easier for you every day"
             />
+          </div>
+        </div>
+      </section>
+      <section className="py-[65px]">
+        <div className="container mx-auto">
+          <div className="flex justify-between items-center gap-20">
+            <div className="max-w-[471px]">
+              <h2 className="text-[#191A15] text-[50px] leading-none font-bold">
+                What Benifit Will You Get
+              </h2>
+              <div className="flex flex-col gap-[30px] pt-[50px]">
+                <div className="text-[#191A15] font-medium text-lg leading-[30px] flex items-center gap-2.5">
+                  <div className="max-w-[26px] min-h-[26px] w-full rounded-full bg-[#54BD95] flex justify-center items-center">
+                    <img src={tick} alt="tick icon" width={20} height={20} />
+                  </div>
+                  Free Consulting With Experet Saving Money
+                </div>
+                <div className="text-[#191A15] font-medium text-lg leading-[30px] flex items-center gap-2.5">
+                  <div className="max-w-[26px] min-h-[26px] w-full rounded-full bg-[#54BD95] flex justify-center items-center">
+                    <img src={tick} alt="tick icon" width={20} height={20} />
+                  </div>
+                  Online Banking
+                </div>
+                <div className="text-[#191A15] font-medium text-lg leading-[30px] flex items-center gap-2.5">
+                  <div className="max-w-[26px] min-h-[26px] w-full rounded-full bg-[#54BD95] flex justify-center items-center">
+                    <img src={tick} alt="tick icon" width={20} height={20} />
+                  </div>
+                  Investment Report Every Month
+                </div>
+                <div className="text-[#191A15] font-medium text-lg leading-[30px] flex items-center gap-2.5">
+                  <div className="max-w-[26px] min-h-[26px] w-full rounded-full bg-[#54BD95] flex justify-center items-center">
+                    <img src={tick} alt="tick icon" width={20} height={20} />
+                  </div>
+                  Saving Money For The Future
+                </div>
+                <div className="text-[#191A15] font-medium text-lg leading-[30px] flex items-center gap-2.5">
+                  <div className="max-w-[26px] min-h-[26px] w-full rounded-full bg-[#54BD95] flex justify-center items-center">
+                    <img src={tick} alt="tick icon" width={20} height={20} />
+                  </div>
+                  Online Transection
+                </div>
+              </div>
+            </div>
+            <div className="relative mr-[69px]">
+              <img src={laptop} alt="laptop image" />
+              <img src={a1} alt="absolute image 1" className="absolute top-10 -left-[152px]" />
+              <img src={a2} alt="absolute image 2" className="absolute top-[121px] -right-[79px]" />
+              <img src={a3} alt="absolute image 3" className="absolute -bottom-8 -left-[100px]" />
+              <img src={a4} alt="absolute image 4" className="absolute top-64 -left-16" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="pt-[65px] pb-[90px]">
+        <div className="container mx-auto">
+          <div className="flex flex-col gap-6 justify-center items-center">
+            <h2 className="leading-[73px] text-[50px] text-[#191A15] font-bold text-center max-w-[492px]">
+              Choose Plan That’s Right For You
+            </h2>
+            <p className="text-[#A6A6A6] font-bold text-lg leading-[22px] text-center">
+              Choose plan that works best for you, feel free to contact us
+            </p>
+          </div>
+          <div className="max-w-[340px] bg-white rounded-xl h-[70px] mx-auto mb-[67px] mt-10 flex items-center p-2 justify-between">
+            <button className="text-lg leading-[30px] font-medium text-[#191A15] w-[160px] h-[56px] text-center bg-transparent rounded-xl">
+              Bill Monthly
+            </button>
+            <button className="text-lg leading-[30px] font-medium text-white w-[160px] h-[56px] text-center bg-[#54BD95] rounded-xl">
+              Bill Yearly
+            </button>
+          </div>
+          <div className="flex justify-center gap-[30px] items-center">
+            <div className="max-w-[374px] w-full bg-white rounded-3xl flex flex-col items-center justify-center px-5 py-6">
+              <div className="flex flex-col gap-2.5 max-w-[251px]">
+                <h3 className="text-[#191A15] font-semibold leading-none text-[30px] text-center">
+                  Free
+                </h3>
+                <p className="text-[#A6A6A6] font-medium leading-[27px] text-lg text-center">
+                  Have a go and test your superpowers
+                </p>
+              </div>
+              <div className="flex gap-1 mt-3 mb-[30px]">
+                <div className="text-[#A6A6A6] leading-[30px] text-lg font-medium">
+                  $
+                </div>
+                <div className="text-[#191A15] leading-none text-[50px] font-semibold">
+                  0
+                </div>
+              </div>
+              <div className="bg-[#F9FAFB] w-full rounded-xl py-6 px-8">
+                <ul className="mb-[27px] flex flex-col gap-[22px]">
+                  <li className="text-[#191A15] font-medium text-lg leading-[30px] flex items-center gap-2.5">
+                    <div className="max-w-[26px] min-h-[26px] w-full rounded-full bg-[#54BD95] flex justify-center items-center">
+                      <img src={tick} alt="tick icon" width={20} height={20} />
+                    </div>
+                    2 Users
+                  </li>
+                  <li className="text-[#191A15] font-medium text-lg leading-[30px] flex items-center gap-2.5">
+                    <div className="max-w-[26px] min-h-[26px] w-full rounded-full bg-[#54BD95] flex justify-center items-center">
+                      <img src={tick} alt="tick icon" width={20} height={20} />
+                    </div>
+                    2 Files
+                  </li>
+                  <li className="text-[#191A15] font-medium text-lg leading-[30px] flex items-center gap-2.5">
+                    <div className="max-w-[26px] min-h-[26px] w-full rounded-full bg-[#54BD95] flex justify-center items-center">
+                      <img src={tick} alt="tick icon" width={20} height={20} />
+                    </div>
+                    Public Share & Comments
+                  </li>
+                  <li className="text-[#191A15] font-medium text-lg leading-[30px] flex items-center gap-2.5">
+                    <div className="max-w-[26px] min-h-[26px] w-full rounded-full bg-[#54BD95] flex justify-center items-center">
+                      <img src={tick} alt="tick icon" width={20} height={20} />
+                    </div>
+                    Chat Support
+                  </li>
+                  <li className="text-[#191A15] font-medium text-lg leading-[30px] flex items-center gap-2.5">
+                    <div className="max-w-[26px] min-h-[26px] w-full rounded-full bg-[#54BD95] flex justify-center items-center">
+                      <img src={tick} alt="tick icon" width={20} height={20} />
+                    </div>
+                    New income apps
+                  </li>
+                </ul>
+                <button className="text-[#54BD95] text-lg leading-[30px] font-semibold py-4 w-full rounded-3xl bg-white shadow-lg">
+                  Signup for free
+                </button>
+              </div>
+            </div>
+            <div className="max-w-[374px] w-full bg-[#54BD95] rounded-3xl flex flex-col items-center justify-center px-5 py-6">
+              <div className="flex flex-col gap-2.5 max-w-[251px]">
+                <h3 className="text-white font-semibold leading-none text-[30px] text-center">
+                  Pro
+                </h3>
+                <p className="text-white font-medium leading-[27px] text-lg text-center">
+                  Experiment the power of infinite possibilities
+                </p>
+              </div>
+              <div className="flex gap-1 mt-3">
+                <div className="text-white leading-[30px] text-lg font-medium">
+                  $
+                </div>
+                <div className="text-white leading-none text-[50px] font-semibold">
+                  8
+                </div>
+              </div>
+              <div className="my-4">
+                <button className="shadow-xl text-white text-sm leading-[30px] font-semibold px-2.5 py-1.5 rounded-xl bg-[#85DAB9]">
+                  Save $50 a year
+                </button>
+              </div>
+              <div className="bg-white w-full rounded-xl py-6 px-8">
+                <ul className="mb-[27px] flex flex-col gap-[22px]">
+                  <li className="text-[#191A15] font-medium text-lg leading-[30px] flex items-center gap-2.5">
+                    <div className="max-w-[26px] min-h-[26px] w-full rounded-full bg-[#54BD95] flex justify-center items-center">
+                      <img src={tick} alt="tick icon" width={20} height={20} />
+                    </div>
+                    4 Users
+                  </li>
+                  <li className="text-[#191A15] font-medium text-lg leading-[30px] flex items-center gap-2.5">
+                    <div className="max-w-[26px] min-h-[26px] w-full rounded-full bg-[#54BD95] flex justify-center items-center">
+                      <img src={tick} alt="tick icon" width={20} height={20} />
+                    </div>
+                    All apps
+                  </li>
+                  <li className="text-[#191A15] font-medium text-lg leading-[30px] flex items-center gap-2.5">
+                    <div className="max-w-[26px] min-h-[26px] w-full rounded-full bg-[#54BD95] flex justify-center items-center">
+                      <img src={tick} alt="tick icon" width={20} height={20} />
+                    </div>
+                    Unlimited editable exports
+                  </li>
+                  <li className="text-[#191A15] font-medium text-lg leading-[30px] flex items-center gap-2.5">
+                    <div className="max-w-[26px] min-h-[26px] w-full rounded-full bg-[#54BD95] flex justify-center items-center">
+                      <img src={tick} alt="tick icon" width={20} height={20} />
+                    </div>
+                    Folders and collaboration
+                  </li>
+                  <li className="text-[#191A15] font-medium text-lg leading-[30px] flex items-center gap-2.5">
+                    <div className="max-w-[26px] min-h-[26px] w-full rounded-full bg-[#54BD95] flex justify-center items-center">
+                      <img src={tick} alt="tick icon" width={20} height={20} />
+                    </div>
+                    All incoming apps
+                  </li>
+                </ul>
+                <button className="text-[#54BD95] text-lg leading-[30px] font-semibold py-4 w-full rounded-3xl bg-white shadow-lg">
+                  Go to pro
+                </button>
+              </div>
+            </div>
+            <div className="max-w-[374px] w-full bg-white rounded-3xl flex flex-col items-center justify-center px-5 py-6">
+              <div className="flex flex-col gap-2.5 max-w-[251px]">
+                <h3 className="text-[#191A15] font-semibold leading-none text-[30px] text-center">
+                  Business
+                </h3>
+                <p className="text-[#A6A6A6] font-medium leading-[27px] text-lg text-center">
+                  Unveil new superpowers and join the Design Leaque
+                </p>
+              </div>
+              <div className="flex gap-1 mt-3 mb-[30px]">
+                <div className="text-[#A6A6A6] leading-[30px] text-lg font-medium">
+                  $
+                </div>
+                <div className="text-[#191A15] leading-none text-[50px] font-semibold">
+                  16
+                </div>
+              </div>
+              <div className="bg-[#F9FAFB] w-full rounded-xl py-6 px-8">
+                <ul className="mb-[27px] flex flex-col gap-[22px]">
+                  <li className="text-[#191A15] font-medium text-lg leading-[30px] flex items-center gap-2.5">
+                    <div className="max-w-[26px] min-h-[26px] w-full rounded-full bg-[#54BD95] flex justify-center items-center">
+                      <img src={tick} alt="tick icon" width={20} height={20} />
+                    </div>
+                    All the features of pro plan
+                  </li>
+                  <li className="text-[#191A15] font-medium text-lg leading-[30px] flex items-center gap-2.5">
+                    <div className="max-w-[26px] min-h-[26px] w-full rounded-full bg-[#54BD95] flex justify-center items-center">
+                      <img src={tick} alt="tick icon" width={20} height={20} />
+                    </div>
+                    Account success Manager
+                  </li>
+                  <li className="text-[#191A15] font-medium text-lg leading-[30px] flex items-center gap-2.5">
+                    <div className="max-w-[26px] min-h-[26px] w-full rounded-full bg-[#54BD95] flex justify-center items-center">
+                      <img src={tick} alt="tick icon" width={20} height={20} />
+                    </div>
+                    Single Sign-On (SSO)
+                  </li>
+                  <li className="text-[#191A15] font-medium text-lg leading-[30px] flex items-center gap-2.5">
+                    <div className="max-w-[26px] min-h-[26px] w-full rounded-full bg-[#54BD95] flex justify-center items-center">
+                      <img src={tick} alt="tick icon" width={20} height={20} />
+                    </div>
+                    Co-conception pogram
+                  </li>
+                  <li className="text-[#191A15] font-medium text-lg leading-[30px] flex items-center gap-2.5">
+                    <div className="max-w-[26px] min-h-[26px] w-full rounded-full bg-[#54BD95] flex justify-center items-center">
+                      <img src={tick} alt="tick icon" width={20} height={20} />
+                    </div>
+                    Collaboration-Soon
+                  </li>
+                </ul>
+                <button className="text-[#54BD95] text-lg leading-[30px] font-semibold py-4 w-full rounded-3xl bg-white shadow-lg">
+                  Goto Business
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
