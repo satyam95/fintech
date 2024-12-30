@@ -1,6 +1,6 @@
 import hero from "../assets/hero.png";
 import divider from "../assets/divider.png";
-import play from "../assets/play.svg";
+import outlinePlay from "../assets/outlinePlay.svg";
 import client1 from "../assets/client1.png";
 import client2 from "../assets/client2.png";
 import client3 from "../assets/client3.png";
@@ -48,7 +48,7 @@ const Home = () => {
                 <Button btnText="Try free trial" varient="primary" size="md" />
                 <div className="text-[#191A15] text-lg font-medium leading-none flex items-center gap-3.5 cursor-pointer">
                   <img
-                    src={play}
+                    src={outlinePlay}
                     alt="play button icon"
                     height={40}
                     width={40}
