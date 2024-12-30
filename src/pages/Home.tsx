@@ -28,23 +28,23 @@ const Home = () => {
   return (
     <>
       <section className="pt-[90px] pb-[65px]">
-        <div className="container mx-auto">
-          <div className="flex gap-10 w-full">
-            <div className="w-1/2">
-              <h2 className="text-[#191A15] text-[80px] leading-[90px] font-bold">
+        <div className="container mx-auto px-4 md:px-8 xl:px-0">
+          <div className="flex flex-col lg:flex-row gap-10 w-full">
+            <div className="text-center lg:text-left lg:w-1/2">
+              <h2 className="text-[#191A15] text-[62px] leading-[72px] md:text-[80px] md:leading-[90px] font-bold">
                 We’re here to Increase your Productivity
               </h2>
               <img
                 src={divider}
                 alt="divider arc"
-                className="mt-[30px] mb-[50px]"
+                className="mt-[30px] mb-[50px] mx-auto lg:ml-0 lg:mr-0"
               />
-              <p className="text-black text-lg leading-[30px font-medium] max-w-[461px]">
+              <p className="text-black text-lg leading-[30px font-medium] lg:max-w-[461px]">
                 Let's make your work more organize and easily using the Taskio
                 Dashboard with many of the latest featuresin managing work every
                 day.
               </p>
-              <div className="mt-[50px] flex gap-10 items-center">
+              <div className="mt-[50px] flex gap-10 items-center justify-center lg:justify-start">
                 <Button btnText="Try free trial" varient="primary" size="md" />
                 <div className="text-[#191A15] text-lg font-medium leading-none flex items-center gap-3.5 cursor-pointer">
                   <img
@@ -57,19 +57,19 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="w-1/2">
+            <div className="lg:w-1/2">
               <img src={hero} alt="hero image" />
             </div>
           </div>
         </div>
       </section>
       <section className="py-[65px]">
-        <div className="container mx-auto">
+        <div className="container mx-auto px-4 md:px-8 xl:px-0">
           <div className="flex flex-col gap-[60px]">
             <h3 className="text-center text-[#191A15] text-[40px] font-bold leading-none">
               More than 25,000 teams use Collabs
             </h3>
-            <div className="flex items-center gap-10 justify-center">
+            <div className="flex flex-wrap items-center gap-10 justify-center">
               <img src={client1} alt="client logo 1" />
               <img src={client2} alt="client logo 1" />
               <img src={client3} alt="client logo 1" />
@@ -80,9 +80,9 @@ const Home = () => {
         </div>
       </section>
       <section className="py-[65px]">
-        <div className="container mx-auto">
-          <div className="flex gap-8">
-            <div className="max-w-[644px]">
+        <div className="container mx-auto px-4 md:px-8 xl:px-0">
+          <div className="flex flex-col lg:flex-row gap-16 lg:gap-8">
+            <div className="w-full lg:max-w-[520px] xl:max-w-[644px]">
               <div className="flex flex-col gap-[30px]">
                 <h2 className="text-[#191A15] text-[50px] leading-none font-semibold">
                   How we support our pratner all over the world
@@ -94,7 +94,7 @@ const Home = () => {
                   software
                 </p>
               </div>
-              <div className="flex gap-20 pt-[73px]">
+              <div className="flex gap-20 pt-[40px] lg:pt-[73px]">
                 <ReviewCard
                   rating={5}
                   title="4.9 / 5 rating"
@@ -132,18 +132,18 @@ const Home = () => {
         </div>
       </section>
       <section className="py-[65px]">
-        <div className="container mx-auto">
-          <div className="flex items-center justify-between">
+        <div className="container mx-auto px-4 md:px-8 xl:px-0">
+          <div className="flex flex-col md:flex-row gap-10 md:gap-0 items-center justify-between">
             <h2 className="text-[#191A15] text-[50px] leading-none font-semibold max-w-[331px]">
               Our Features you cab get
             </h2>
-            <p className="text-[#A6A6A6] text-lg leading-[30px] font-medium max-w-[461px]">
+            <p className="hidden lg:block text-[#A6A6A6] text-lg leading-[30px] font-medium max-w-[390px] xl:max-w-[461px]">
               We offer a variety of interesting features that you can help
               increase yor productivity at work and manage your projrct esaly
             </p>
             <Button btnText="Get Started" varient="primary" size="md" />
           </div>
-          <div className="w-full flex justify-between gap-[30px] pt-[74px]">
+          <div className="w-full flex flex-wrap justify-center xl:justify-between gap-[65px] xl:gap-[30px] pt-[74px]">
             <FeatureCard
               img={feat1}
               imgAlt="feature 1 image"
@@ -166,9 +166,9 @@ const Home = () => {
         </div>
       </section>
       <section className="py-[65px]">
-        <div className="container mx-auto">
-          <div className="flex justify-between items-center gap-20">
-            <div className="max-w-[471px]">
+        <div className="container mx-auto px-4 md:px-8 xl:px-0">
+          <div className="flex flex-col lg:flex-col justify-between items-center gap-20">
+            <div className="lg:max-w-[471px]">
               <h2 className="text-[#191A15] text-[50px] leading-none font-bold">
                 What Benifit Will You Get
               </h2>
@@ -205,18 +205,18 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="relative mr-[69px]">
+            <div className="relative lg:mr-[69px]">
               <img src={laptop} alt="laptop image" />
-              <img src={a1} alt="absolute image 1" className="absolute top-10 -left-[152px]" />
-              <img src={a2} alt="absolute image 2" className="absolute top-[121px] -right-[79px]" />
-              <img src={a3} alt="absolute image 3" className="absolute -bottom-8 -left-[100px]" />
-              <img src={a4} alt="absolute image 4" className="absolute top-64 -left-16" />
+              <img src={a1} alt="absolute image 1" className="hidden md:block absolute top-10 -left-[152px]" />
+              <img src={a2} alt="absolute image 2" className="hidden md:block absolute top-[121px] -right-[79px]" />
+              <img src={a3} alt="absolute image 3" className="hidden md:block absolute -bottom-8 -left-[100px]" />
+              <img src={a4} alt="absolute image 4" className="hidden md:block absolute top-64 -left-16" />
             </div>
           </div>
         </div>
       </section>
       <section className="pt-[65px] pb-[90px]">
-        <div className="container mx-auto">
+        <div className="container mx-auto px-4 md:px-8 xl:px-0">
           <div className="flex flex-col gap-6 justify-center items-center">
             <h2 className="leading-[73px] text-[50px] text-[#191A15] font-bold text-center max-w-[492px]">
               Choose Plan That’s Right For You
@@ -233,7 +233,7 @@ const Home = () => {
               Bill Yearly
             </button>
           </div>
-          <div className="flex justify-center gap-[30px] items-center">
+          <div className="flex flex-col lg:flex-row justify-center gap-[30px] items-center">
             <div className="max-w-[374px] w-full bg-white rounded-3xl flex flex-col items-center justify-center px-5 py-6">
               <div className="flex flex-col gap-2.5 max-w-[251px]">
                 <h3 className="text-[#191A15] font-semibold leading-none text-[30px] text-center">

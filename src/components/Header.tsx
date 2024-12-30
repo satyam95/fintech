@@ -3,13 +3,13 @@ import Button from "./Button";
 const Header = () => {
   return (
     <header>
-      <div className="container mx-auto">
+      <div className="container mx-auto px-4 md:px-8 xl:px-0">
         <div className="flex justify-between items-center py-10">
           <div className="text-[#54BD95] font-semibold leading-none text-[50px] cursor-pointer">
             Biccas
           </div>
           <div className="flex items-center gap-[130px]">
-            <nav>
+            <nav className="hidden lg:block">
               <ul className="flex gap-10 items-center">
                 <li className="text-[#A6A6A6] font-medium leading-none text-base cursor-pointer">
                   Home

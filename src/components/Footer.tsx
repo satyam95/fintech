@@ -10,10 +10,10 @@ import arrowRight from "../assets/arrow-right.png";
 const Footer = () => {
   return (
     <footer className="bg-[#161C28]">
-      <div className="container mx-auto">
-        <div className="pt-[130px] pb-[170px]">
-          <div className="flex justify-between gap-[100px]">
-            <div className="max-w-[466px]">
+      <div className="container mx-auto px-4 md:px-8 xl:px-0">
+        <div className="pt-[130px] pb-[100px] md:pb-[170px]">
+          <div className="flex justify-between flex-col lg:flex-row gap-[50px] xl:gap-[100px]">
+            <div className="lg:max-w-[466px]">
               <div className="flex flex-col gap-5">
                 <h3 className="text-[50px] leading-none font-semibold text-white">
                   People are Saying About DoWhith
@@ -34,7 +34,7 @@ const Footer = () => {
                   _ Aria Zinanrio
                 </p>
               </div>
-              <div className="flex items-center gap-5 mt-10">
+              <div className="flex items-center gap-2 md:gap-5 mt-10">
                 <img src={review1} alt="review 1" width={66} height={66} />
                 <img src={review2} alt="review 2" width={66} height={66} />
                 <img src={review3} alt="review 3" width={66} height={66} />
@@ -44,7 +44,7 @@ const Footer = () => {
             </div>
             <div className="grow">
               <div className="bg-[#222938] rounded-3xl w-full h-full">
-                <div className="flex flex-col justify-center gap-6 items-center w-full h-full">
+                <div className="flex flex-col justify-center gap-6 items-center w-full h-full p-6 xl:p-0">
                   <div className="flex items-center gap-2.5 flex-col">
                     <img
                       src={coin}
@@ -68,7 +68,7 @@ const Footer = () => {
                         id="emailField"
                         type="text"
                         placeholder="Enter your email"
-                        className="h-[50px] w-[440px] bg-white rounded-xl text-[#A6A6A6] text-sm outline-none px-5 py-4 placeholder:text-[#A6A6A6]"
+                        className="h-[50px] w-full md:w-[440px] bg-white rounded-xl text-[#A6A6A6] text-sm outline-none px-5 py-4 placeholder:text-[#A6A6A6]"
                       />
                     </div>
                     <div className="flex flex-col gap-5">
@@ -82,11 +82,11 @@ const Footer = () => {
                         id="message"
                         rows={3}
                         placeholder="What are you say ?"
-                        className="w-[440px] bg-white rounded-xl text-[#A6A6A6] text-sm outline-none px-5 py-4 placeholder:text-[#A6A6A6]"
+                        className="w-full md:w-[440px] bg-white rounded-xl text-[#A6A6A6] text-sm outline-none px-5 py-4 placeholder:text-[#A6A6A6]"
                       />
                     </div>
                     <div className="flex flex-col items-end	gap-1">
-                      <button className="text-white text-base leading-none font-semibold w-full text-center max-w-[440px] bg-[#54BD95] rounded-xl py-5">
+                      <button className="text-white text-base leading-none font-semibold w-full text-center w-[320px] md:w-[440px] bg-[#54BD95] rounded-xl py-5">
                         Request Demo
                       </button>
                       <p className="font-medium text-sm leading-none text-white">
@@ -100,8 +100,8 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex gap-[157px]">
-          <div className="w-[410px]">
+        <div className="flex flex-col md:flex-row gap-[80px] md:gap-[40px] lg:gap-[80px] xl:gap-[157px]">
+          <div className="w-full md:w-1/2 lg:w-[410px]">
             <div className="flex flex-col gap-[30px]">
               <h2 className="text-[#54BD95] leading-none font-semibold text-[50px]">
                 Biccas
@@ -127,7 +127,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="grow">
-            <div className="grid grid-cols-3 gap-[64px]">
+            <div className="grid grid-cols-3 gap-[30px] xl:gap-[64px]">
               <div className="flex flex-col gap-[30px]">
                 <h3 className="text-white text-lg leading-none font-medium">
                   Support
@@ -188,16 +188,16 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="pb-10 pt-16 flex justify-between items-center">
-          <div className="text-white text-lg font-medium leading-[30px]">
+        <div className="pb-10 pt-16 flex flex-col lg:flex-row justify-between items-center">
+          <div className="text-white text-base md:text-lg font-medium leading-[30px]">
             © 2022 Biccas Inc. Copyright and rights reserved
           </div>
           <div className="flex items-center gap-3">
-            <div className="text-white text-lg font-medium leading-[30px] cursor-pointer">
+            <div className="text-white text-base md:text-lg font-medium leading-[30px] cursor-pointer">
               Terms and Condtions
             </div>
             <div className="w-1 h-1 bg-white rounded-full" />
-            <div className="text-white text-lg font-medium leading-[30px] cursor-pointer">
+            <div className="text-white text-base md:text-lg font-medium leading-[30px] cursor-pointer">
               Privacy Policy
             </div>
           </div>
