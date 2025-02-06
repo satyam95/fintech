@@ -167,7 +167,7 @@ const Home = () => {
       </section>
       <section className="py-[65px]">
         <div className="container mx-auto px-4 md:px-8 xl:px-0">
-          <div className="flex flex-col lg:flex-col justify-between items-center gap-20">
+          <div className="flex flex-col lg:flex-row justify-between lg:justify-center items-center gap-20 lg:gap-40">
             <div className="lg:max-w-[471px]">
               <h2 className="text-[#191A15] text-[50px] leading-none font-bold">
                 What Benifit Will You Get
